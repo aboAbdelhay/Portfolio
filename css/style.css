@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  font-size: 25px;
+  color: #031540;
+  text-decoration: none;
+  font-weight: 700;
+}
+.logo:hover {
+  color: #00abf0;
+}
+.navbar a {
+  font-size: 18px;
+  font-weight: 500px;
+  text-decoration: none;
+  color: #fff;
+  margin-left: 35px;
+  transition: 0.3s;
+}
+.navbar a:hover,
+.navbar .active {
+  color: #00abf0;
+}
+.home {
+  height: 100vh;
+  background: linear-gradient(-90deg, #031540 65%, #fff 35%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+}
+.home-image {
+  width: 500px;
+  height: 500px;
+  background: #031540;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: solid 25px #fff;
+  outline: solid 25px #031540;
+}
+.home-image img {
+  position: relative;
+  bottom: 22px;
+  max-width: 380px;
+}
+.home-content {
+  max-width: 600px;
+  color: #fff;
+  text-align: right;
+}
+.home-content h1 {
+  font-size: 55px;
+  line-height: 1.2;
+}
+.home-content h3 {
+  font-size: 40px;
+  color: transparent;
+  -webkit-text-stroke: 0.5px #fff;
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#00abf0, #00abf0);
+  background-position: -410px 0;
+  animation: animateText 6s infinite linear;
+}
+@keyframes animateText {
+  0%,
+  95%,
+  100% {
+    background-position: -410px 0;
+  }
+  65%,
+  85% {
+    background-position: 0 0;
+  }
+}
+.home-content p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+.home-sci {
+  margin: 25px 0 40px;
+}
+.home-sci a {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: #00abf0;
+  border: 2px solid #fff;
+  margin-left: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  background: transparent;
+  transition: 0.5s;
+}
+.home-sci a:hover {
+  background: #00abf0;
+  color: #fff;
+  border-color: #00abf0;
+  box-shadow: 0 0 10px #00abf0;
+}
+.btn {
+  padding: 12px 35px;
+  border-radius: 40px;
+  background: #00abf0;
+  box-shadow: 0 0 10px #00abf0;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+.btn:hover {
+  box-shadow: none;
+}
