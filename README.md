@@ -1,2 +1,2 @@
 Demo
-https://aboabdelhay.github.io/Portfolio/
+https://aboabdelhay.github.io/portfolio/
