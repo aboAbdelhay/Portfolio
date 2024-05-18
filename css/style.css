@@ -38,7 +38,7 @@
 }
 .home {
   height: 100vh;
-  background: linear-gradient(-90deg, #031540 65%, #fff 35%);
+  background: linear-gradient(to left, #031540 65%, #fff 35%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,11 +54,14 @@
   border-radius: 50%;
   border: solid 25px #fff;
   outline: solid 25px #031540;
+  position: relative;
+  z-index: 5;   
 }
 .home-image img {
-  position: relative;
-  bottom: 0;
-  max-width: 184px;
+  position: absolute;
+  bottom: 16px;
+  max-width: 185px;
+  border-radius: 20px;
 }
 .home-content {
   max-width: 600px;
